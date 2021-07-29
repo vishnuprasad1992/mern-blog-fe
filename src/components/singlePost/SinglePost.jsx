@@ -27,7 +27,7 @@ const SinglePost = () => {
     const PF = "http://localhost:5000/images/"; 
     const deleteHandler = async ()=>{
         try {
-        const deletePost = await axios.delete(https://blog-mern-be.herokuapp.com/api/post/${path}`,{
+        const deletePost = await axios.delete(`https://blog-mern-be.herokuapp.com/api/post/${path}`,{
             data:{username: user.username}
         })
         console.log(deletePost.data)

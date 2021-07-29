@@ -1,0 +1,18 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    border: none;
+    background-color: rgb(250, 243, 250);
+    padding: 20px;
+    margin: 100px auto;
+}
+.contact p{
+    line-height: 2rem;
+}
+
+.contact h1{
+    margin-bottom: 30px;
+}

@@ -1,0 +1,76 @@
+.settings{
+    display: flex;    
+}
+.settingsWrapper{
+    flex: 9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.settingsUpdate{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.updateAccount{
+    font-size: 30px;
+    color: yellowgreen;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.deleteAccount{
+    font-size: 30px;
+    color:red;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.settingsForm{
+    margin: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.settingsForm > label{
+    margin: 4px 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+}
+.settingsForm > input{
+    margin: 20px 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(248, 218, 218);
+}
+.settingsPp{
+    display: flex;
+    align-items: center;
+}
+.settingsPp > img{ 
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.ppIcon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: lightseagreen;
+    font-size: 50px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.updateBtn{
+    width: 150px;
+    padding: 15px 30px;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    align-self: center;
+    margin: 10px auto;
+    background-color: teal;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+

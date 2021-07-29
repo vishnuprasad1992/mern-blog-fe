@@ -1,0 +1,66 @@
+.topbar{
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: white;
+    position: sticky;
+    height: 50px;
+    top: 0;
+    width: 100%;
+    color: #444;
+    z-index: 999;
+}
+.topRight,.topLeft{
+    flex: 3;
+}
+.topLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchIcon{
+    padding-left: 20px;
+    cursor: pointer;
+}
+.topRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialIcons{
+    padding: 0 10px;
+    cursor: pointer;
+}
+.topCenter{
+    flex: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+ul li:hover{
+    border:none;
+    border-top: 2px solid orange;
+    padding: 10px;
+    background-color: rgb(238, 222, 237);
+}
+.topImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}

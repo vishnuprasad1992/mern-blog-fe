@@ -1,0 +1,59 @@
+.writeForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.writeIcon{
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    border-radius: 50%;
+    color: lightcoral;
+    cursor: pointer;
+}
+.writeInput{
+    font-size: 35px;
+    color: lightcoral;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px;
+    border: none;
+    outline: none;
+}
+.writeContent{
+    width: 70%;
+    border:none;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+    /* height: 100vh; */
+}
+.writeContent:focus{
+    outline: none;
+}
+.publishBtn{
+    position: absolute;
+    top: 420px;
+    right: 150px;
+    padding: 15px;
+    border : none;
+    border-radius: 10px;
+    background-color: teal;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    cursor: pointer;
+}
+.write{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+.write >img{
+    width: 70vw;
+    height:300px;
+    border-radius:20px;
+    object-fit: cover;
+    margin: 10px auto;
+}

@@ -14,7 +14,7 @@ const Home = () => {
     useEffect(() => {
 
         const searchPost = async () =>{
-            const res = await axios.get(`http://localhost:5000/api/post/${search}`);
+            const res = await axios.get(`https://blog-mern-be.herokuapp.com/api/post/${search}`);
             setPosts(res.data);
         }
         searchPost();

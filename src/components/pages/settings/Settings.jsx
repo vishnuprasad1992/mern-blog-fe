@@ -15,7 +15,7 @@ const Settings = () => {
     const [success,setSuccess] = useState(false)
     const { user,dispatch } = useContext(Context)
 
-    const PF = "http://localhost:5000/images/"
+    const PF = "https://blog-mern-be.herokuapp.com/images/"
     const handleSubmit = async (e) => {
         e.preventDefault();
         dispatch({type:"UPDATE_START"})
@@ -33,14 +33,14 @@ const Settings = () => {
             data.append("file", file);
             updateUser.profilePicture = fileName;
             try {
-                await axios.post("http://localhost:5000/api/upload", data);
+                await axios.post("https://blog-mern-be.herokuapp.com/api/upload", data);
                 console.log("image uploaded successfully")
             } catch (error) {
                 console.log(error);
             }
         }
         try {
-            const res =  await axios.put(`http://localhost:5000/api/user/${user._id}`, updateUser);
+            const res =  await axios.put(`https://blog-mern-be.herokuapp.com/api/user/${user._id}`, updateUser);
             setSuccess(true);
             dispatch({type:"UPDATE_SUCCESS",payload:res.data})
 

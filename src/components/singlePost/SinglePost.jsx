@@ -17,7 +17,7 @@ const SinglePost = () => {
 
     useEffect(() => {
         const fetchSinglePost = async() =>{
-            const res = await axios.get(`http://localhost:5000/api/post/${path}`)
+            const res = await axios.get(`https://blog-mern-be.herokuapp.com/api/post/${path}`)
             setPost(res.data)
             setTitle(res.data.title)
             setDesc(res.data.desc)
@@ -27,7 +27,7 @@ const SinglePost = () => {
     const PF = "http://localhost:5000/images/"; 
     const deleteHandler = async ()=>{
         try {
-        const deletePost = await axios.delete(`http://localhost:5000/api/post/${path}`,{
+        const deletePost = await axios.delete(https://blog-mern-be.herokuapp.com/api/post/${path}`,{
             data:{username: user.username}
         })
         console.log(deletePost.data)
@@ -46,7 +46,7 @@ const SinglePost = () => {
             username:user.username
         };
         try {
-            const postUpdated = await axios.put(`http://localhost:5000/api/post/${path}`, updatedSinglePost )
+            const postUpdated = await axios.put(`https://blog-mern-be.herokuapp.com/api/post/${path}`, updatedSinglePost )
             setPost(postUpdated.data)
             setUpdateMode(false)
             } catch (error) {

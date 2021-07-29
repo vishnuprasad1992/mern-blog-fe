@@ -8,7 +8,7 @@ const Topbar = () => {
     const logoutHandler = () => {
         dispatch({type:"LOGOUT"});
     }
-    const PF = "http://localhost:5000/images/"
+    const PF = "https://blog-mern-be.herokuapp.com/images/"
     return (
         <div className="topbar">
             <div className="topLeft">

@@ -18,7 +18,7 @@ const Login = () => {
             username,password
         }
         try {
-            const res = await axios.post("http://localhost:5000/api/auth/login",loginDetails);
+            const res = await axios.post("https://blog-mern-be.herokuapp.com/api/auth/login",loginDetails);
             dispatch({type:"LOGIN_SUCCESS", payload:res.data})
         } catch (error) {
             dispatch({type:"LOGIN_FAILURE"})
